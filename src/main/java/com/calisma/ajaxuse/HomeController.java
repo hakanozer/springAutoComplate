@@ -30,7 +30,6 @@ public class HomeController {
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public  Map<String, List<Kullanici>> getTagList(@RequestParam("term") String ara) {
-		System.out.println("çalıştı " + ara) ;
 		Map<String, List<Kullanici>> hm = new HashMap<String, List<Kullanici>>();
         List<Kullanici> data = new ArrayList<Kullanici>();
         try {
